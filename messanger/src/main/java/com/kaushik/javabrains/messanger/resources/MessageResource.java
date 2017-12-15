@@ -28,7 +28,7 @@ public class MessageResource {
 	@Produces(MediaType.APPLICATION_JSON)
 	public List<Message> getMessages(@QueryParam("year") int year,@QueryParam("start") int start,@QueryParam("size") int size)
 	{
-		if(year>0)
+		if(year>0) //
 		{
 			return ms.getAllMessagesForYear(year);
 		}
